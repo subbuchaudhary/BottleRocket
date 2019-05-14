@@ -16,7 +16,7 @@ class InternetViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var forwardButton: UIBarButtonItem!
     @IBOutlet weak var reloadButton: UIBarButtonItem!
-
+    
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self

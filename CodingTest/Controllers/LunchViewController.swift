@@ -47,4 +47,5 @@ class LunchViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryType: UILabel!
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var backGroundImg: UIImageView!
+    @IBOutlet weak var customView: UIView!
 }

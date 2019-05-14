@@ -31,7 +31,7 @@
         <scene sceneID="EbD-qj-ca0">
             <objects>
                 <viewController storyboardIdentifier="LunchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O4E-tB-Mx4" customClass="LunchViewController" customModule="CodingTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="PLP-Ol-cyM">
+                    <view key="view" contentMode="scaleToFill" id="PLP-Ol-cyM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -55,35 +55,48 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A5n-oB-ox6">
                                                     <rect key="frame" x="0.0" y="0.0" width="319" height="180"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-fp-o4q">
-                                                    <rect key="frame" x="12" y="157.5" width="295" height="16.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-48-qZq">
-                                                    <rect key="frame" x="12" y="129.5" width="295" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ez-h4-MS0">
+                                                    <rect key="frame" x="0.0" y="105" width="319" height="75"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-fp-o4q">
+                                                            <rect key="frame" x="12" y="52.5" width="295" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-48-qZq">
+                                                            <rect key="frame" x="12" y="24.5" width="295" height="22"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ueJ-fp-o4q" secondAttribute="trailing" constant="12" id="2fv-eI-xoG"/>
+                                                        <constraint firstItem="ueJ-fp-o4q" firstAttribute="leading" secondItem="4Ez-h4-MS0" secondAttribute="leading" constant="12" id="cI7-QX-UuS"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ueJ-fp-o4q" secondAttribute="bottom" constant="6" id="nsV-t5-gAg"/>
+                                                        <constraint firstItem="1nb-48-qZq" firstAttribute="trailing" secondItem="ueJ-fp-o4q" secondAttribute="trailing" id="pwP-7a-bDs"/>
+                                                        <constraint firstItem="1nb-48-qZq" firstAttribute="leading" secondItem="ueJ-fp-o4q" secondAttribute="leading" id="rGZ-e6-Mgw"/>
+                                                        <constraint firstAttribute="height" constant="75" id="t9j-zc-cCa"/>
+                                                        <constraint firstItem="ueJ-fp-o4q" firstAttribute="top" secondItem="1nb-48-qZq" secondAttribute="bottom" constant="6" id="uYP-2V-U3Q"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="A5n-oB-ox6" secondAttribute="trailing" id="0GO-3T-uiU"/>
-                                            <constraint firstItem="1nb-48-qZq" firstAttribute="leading" secondItem="ueJ-fp-o4q" secondAttribute="leading" id="QWx-qm-sdV"/>
-                                            <constraint firstAttribute="bottom" secondItem="ueJ-fp-o4q" secondAttribute="bottom" constant="6" id="RmB-jr-jWx"/>
-                                            <constraint firstItem="1nb-48-qZq" firstAttribute="trailing" secondItem="ueJ-fp-o4q" secondAttribute="trailing" id="clo-ze-Yfh"/>
-                                            <constraint firstItem="ueJ-fp-o4q" firstAttribute="top" secondItem="1nb-48-qZq" secondAttribute="bottom" constant="6" id="ctO-sU-Pkw"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Ez-h4-MS0" secondAttribute="trailing" id="Dvw-Kf-Qwf"/>
                                             <constraint firstItem="A5n-oB-ox6" firstAttribute="leading" secondItem="0De-SG-2NR" secondAttribute="leading" id="czH-61-ZJV"/>
                                             <constraint firstItem="A5n-oB-ox6" firstAttribute="top" secondItem="0De-SG-2NR" secondAttribute="top" id="gGl-fW-49D"/>
-                                            <constraint firstItem="ueJ-fp-o4q" firstAttribute="leading" secondItem="0De-SG-2NR" secondAttribute="leading" constant="12" id="mtE-7U-h8R"/>
-                                            <constraint firstAttribute="trailing" secondItem="ueJ-fp-o4q" secondAttribute="trailing" constant="12" id="wCX-oZ-74u"/>
+                                            <constraint firstItem="4Ez-h4-MS0" firstAttribute="leading" secondItem="0De-SG-2NR" secondAttribute="leading" id="n0V-td-gNA"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Ez-h4-MS0" secondAttribute="bottom" id="xyW-HM-wFW"/>
                                             <constraint firstAttribute="bottom" secondItem="A5n-oB-ox6" secondAttribute="bottom" id="zTG-QQ-urR"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="backGroundImg" destination="A5n-oB-ox6" id="zSA-c2-6DU"/>
                                             <outlet property="categoryType" destination="ueJ-fp-o4q" id="jt4-uV-x3s"/>
+                                            <outlet property="customView" destination="4Ez-h4-MS0" id="7fe-Sf-sSU"/>
                                             <outlet property="restaurantName" destination="1nb-48-qZq" id="cWl-Ps-PG3"/>
                                         </connections>
                                     </collectionViewCell>
@@ -264,7 +277,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="ic_webBack" id="8dH-UU-KJB">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.2627450980392157" green="0.90980392156862744" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -289,7 +302,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="ic_webBack" id="sw0-7O-DG7">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.90980392160000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">

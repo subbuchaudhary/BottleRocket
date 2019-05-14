@@ -23,6 +23,7 @@ extension LunchViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: LunchViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "LunchViewCell", for: indexPath) as! LunchViewCell
+        cell.customView.backgroundColor = UIColor(patternImage: UIImage(named: "cellGradientBackground")!)
         cell.restaurantName.text = restaurantList[indexPath.row].name
         cell.categoryType.text = restaurantList[indexPath.row].category
         cell.backGroundImg.downloaded(from: restaurantList[indexPath.row].backgroundImageURL)
